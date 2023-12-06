@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="images/x-icon" href="./images/google icon.png" />
+    <title>Google</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 14px;
+            color: #555;
+        }
+
+        body {
+            height: 100vh;
+            overflow: hidden;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        nav {
+            display: flex;
+            justify-content: end;
+            padding: 20px 10px;
+            height: 60px;
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+            align-items: center;
+        }
+
+        li {
+            text-align: center;
+            padding: 14px 12px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .menu-bg {
+            border-radius: 50%;
+            padding: 3px;
+        }
+
+        .menu-bg:hover {
+            background-color: rgba(100, 100, 100, 0.1);
+            cursor: pointer;
+        }
+
+        .login-button {
+            background-color: #1a73e8;
+            color: white;
+            padding: 8px 14px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .logo {
+            width: 272px;
+            height: 92px;
+        }
+
+        .search-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 60vh;
+        }
+
+        form {
+            position: relative;
+            margin-top: 30px;
+        }
+
+        input {
+            width: 580px;
+            height: 45px;
+            padding-left: 50px;
+            font-size: 16px;
+            border-radius: 45px;
+            border: 1px solid #d3d3d3;
+        }
+
+        input:hover {
+            box-shadow : 0 1px 3px 1px rgba(201, 201, 201, 0.5)
+        }
+
+        input:focus {
+            outline : none;
+        }
+
+        .search {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 12px;
+            left: 20px;
+        }
+
+        .lens {
+            width: 28px;
+            height: 30px;
+            position: absolute;
+            top: 8px;
+            left: 540px;
+            cursor: pointer;
+        }
+
+        .mic {
+            width: 28px;
+            height: 30px;
+            position: absolute;
+            top: 8px;
+            left: 500px;
+            cursor: pointer;
+        }
+
+        .keyboard {
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            top: 8px;
+            left: 460px;
+            cursor: pointer;
+        }
+
+        .buttons {
+            width: 350px;
+            margin: auto;
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        button {
+            border: 1px solid transparent;
+            padding: 8px 12px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+        }
+
+        button:hover {
+            border: 1px solid #ccc;
+            cursor: pointer;
+        }
+
+        footer {
+            width: 100%;
+            background-color: #f2f2f2;
+        }
+
+        .panel {
+            border-bottom: 1px solid #ddd;
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+        }
+
+        .panel > * {
+            flex-basis: 33%;
+        }
+
+        p {
+            color: grey;
+            padding-left: 13px;
+        }
+
+        .carbon {
+            text-align: center;
+            list-style: none;
+        }
+
+        .leaf {
+            width: 12px;
+        }
+
+        .right {
+            justify-content: flex-end;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div style="height: 50px; width: 50px; border-radius: 50%; background-color: red;"></div>
+            <div style="height: 30px; width: 30px; border-radius: 50%; background-color: white; position: relative; right: 40px; top: 10px;"></div>
+            <ul>
+                <li class="text-hov"><a href="">Gmail</a></li>
+                <li class="text-hov"><a href="">Görseller</a></li>
+                <li class="menu-bg"><img class="menu-button" src="./images/apps_FILL0_wght400_GRAD0_opsz24.png" alt="menu picture"></li>
+                <li><button class="login-button">Oturum Açın</button></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="search-container">
+        <img class="logo" src="./images/google.png" alt="google logo">
+        <form>
+            <img class="search" src="./images/search.png" alt="search icon">
+            <img class="keyboard" src="./images/keybord.png" alt="keyboard icon">
+            <img class="mic" src="./images/mic.png" alt="microfon icon">
+            <img class="lens" src="./images/lens.png" alt="lens icon">
+
+            <input type="text">
+
+            <div class="buttons">
+                <button type="button">Google'da Ara</button>
+                <button type="button">Kendimi Şanslı Hissediyorum</button>
+            </div>
+        </form>
+    </section>
+    
+    <footer>
+        <div class="panel">
+            <p>Türkiye</p> 
+        </div>
+        <div class="panel">
+            <ul>
+                <li><a href="#">Hakkında</a></li>
+                <li> <a href="#">Reklam</a></li>
+                <li><a href="#">İşletme</a></li>
+                <li><a href="#">Arama Nasıl Çalışır?</a></li>
+            </ul>
+        
+            <div class="carbon">
+                <img class="leaf" src="./images/leaf.png" alt="leaf icon">
+                <a href="#">İklimle ilgili çalışmalarımızın üçüncü on yılı </a>
+            </div>
+        
+            <ul class="right">
+                <li><a href="#">Gizlilik</a></li>
+                <li> <a href="#">Şartlar</a></li>
+                <li><a href="#">Ayarlar</a></li>
+            </ul>
+            
+        </div>
+    </footer>
+</body>
+</html>
